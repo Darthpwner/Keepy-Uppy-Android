@@ -11,6 +11,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/hello_world"/>
+        android:text="@string/textView"/>
 </LinearLayout>
 <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/src/main/res/layout/activity_main.xml -->

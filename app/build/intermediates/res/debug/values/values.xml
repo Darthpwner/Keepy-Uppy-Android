@@ -200,10 +200,14 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Keepy-Uppy</string>
-    <string name="hello_world">Matthew is learning Android!</string>
     <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="textView">Matthew is learning Android!</string>
+    <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
