@@ -42,7 +42,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        //Test the Button
-        mainTextView.setText("Button pressed!");
+        // Take what was typed into the EditText
+        // and use in TextView
+        mainTextView.setText(mainEditText.getText().toString()
+                + " is a fucking slut");
     }
 }
