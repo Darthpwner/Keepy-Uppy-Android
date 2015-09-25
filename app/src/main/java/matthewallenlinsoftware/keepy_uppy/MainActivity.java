@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
     TextView mainTextView;
     Button mainButton;
+    EditText mainEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +22,15 @@ public class MainActivity extends ActionBarActivity {
         // and then set its text
         mainTextView = (TextView) findViewById(R.id.main_textview);
         mainTextView.setText("Set in Java!");
-    }
 
-    /*Buggy*/
-    // 2. Access the Button defined in layout XML
-    // and listen for it here
-//    mainButton = (Button) findViewById(R.id_main_button);
-//    mainButton.setOnClickListener(this);
+        //2. Access the Button defined in layout XML
+        //and listen for it here
+        mainButton = (Button) findViewById(R.id_main_button);
+        mainButton.setOnClickListener(this);
+
+        // 3. Access the EditText defined in layout XML
+        mainEditText = (EditText) findViewById(R.id.main_edittext);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
