@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         //2. Access the Button defined in layout XML
         //and listen for it here
-        mainButton = (Button) findViewById(R.id_main_button);
+        mainButton = (Button) findViewById(R.id.main_button);
         mainButton.setOnClickListener(this);
 
         // 3. Access the EditText defined in layout XML
@@ -42,6 +42,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        
+
     }
 }
