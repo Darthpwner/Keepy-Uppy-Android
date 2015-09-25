@@ -42,6 +42,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
+        //Test the Button
+        mainTextView.setText("Button pressed!");
     }
 }
