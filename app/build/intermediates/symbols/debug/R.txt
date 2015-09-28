@@ -408,8 +408,15 @@ int drawable abc_textfield_default_mtrl_alpha 0x7f020037
 int drawable abc_textfield_search_activated_mtrl_alpha 0x7f020038
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f020039
 int drawable abc_textfield_search_material 0x7f02003a
-int drawable ic_launcher 0x7f02003b
-int drawable notification_template_icon_bg 0x7f02003c
+int drawable beach 0x7f02003b
+int drawable bouncing_ball 0x7f02003c
+int drawable choose_background 0x7f02003d
+int drawable choose_ball 0x7f02003e
+int drawable desert 0x7f02003f
+int drawable forest 0x7f020040
+int drawable ic_launcher 0x7f020041
+int drawable notification_template_icon_bg 0x7f020043
+int drawable rules 0x7f020042
 int id action0 0x7f0c0052
 int id action_bar 0x7f0c0040
 int id action_bar_activity_content 0x7f0c0000

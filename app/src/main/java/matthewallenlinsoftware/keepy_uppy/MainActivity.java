@@ -45,6 +45,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         // Take what was typed into the EditText
         // and use in TextView
         mainTextView.setText(mainEditText.getText().toString()
-                + " is a fucking slut");
+                + " is a cool kid");
     }
 }
