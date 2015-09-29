@@ -1523,15 +1523,19 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020038;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
-        public static final int beach=0x7f02003b;
-        public static final int bouncing_ball=0x7f02003c;
-        public static final int choose_background=0x7f02003d;
-        public static final int choose_ball=0x7f02003e;
-        public static final int desert=0x7f02003f;
-        public static final int forest=0x7f020040;
-        public static final int ic_launcher=0x7f020041;
-        public static final int notification_template_icon_bg=0x7f020043;
-        public static final int rules=0x7f020042;
+        public static final int back_arrow=0x7f02003b;
+        public static final int basketball=0x7f02003c;
+        public static final int beach=0x7f02003d;
+        public static final int beach_ball=0x7f02003e;
+        public static final int bouncing_ball=0x7f02003f;
+        public static final int bowling_ball=0x7f020040;
+        public static final int choose_background=0x7f020041;
+        public static final int choose_ball=0x7f020042;
+        public static final int desert=0x7f020043;
+        public static final int forest=0x7f020044;
+        public static final int ic_launcher=0x7f020045;
+        public static final int notification_template_icon_bg=0x7f020047;
+        public static final int rules=0x7f020046;
     }
     public static final class id {
         public static final int action0=0x7f0d0052;
@@ -1683,6 +1687,7 @@ containing a value of this type.
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
+        public static final int keepy_uppy_icon=0x7f030001;
     }
     public static final class raw {
         public static final int gameover=0x7f060000;
