@@ -1538,6 +1538,9 @@ containing a value of this type.
         public static final int rules=0x7f020046;
     }
     public static final class id {
+        public static final int Start=0x7f0d0051;
+        public static final int Title=0x7f0d0050;
+        public static final int TitlePageScene=0x7f0d004f;
         public static final int action0=0x7f0d0052;
         public static final int action_bar=0x7f0d0040;
         public static final int action_bar_activity_content=0x7f0d0000;
@@ -1586,9 +1589,6 @@ containing a value of this type.
         public static final int line3=0x7f0d005b;
         public static final int listMode=0x7f0d0009;
         public static final int list_item=0x7f0d002a;
-        public static final int main_button=0x7f0d0050;
-        public static final int main_edittext=0x7f0d0051;
-        public static final int main_textview=0x7f0d004f;
         public static final int media_actions=0x7f0d0055;
         public static final int middle=0x7f0d0015;
         public static final int multiply=0x7f0d001e;

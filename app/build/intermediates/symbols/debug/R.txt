@@ -421,6 +421,9 @@ int drawable forest 0x7f020044
 int drawable ic_launcher 0x7f020045
 int drawable notification_template_icon_bg 0x7f020047
 int drawable rules 0x7f020046
+int id Start 0x7f0d0051
+int id Title 0x7f0d0050
+int id TitlePageScene 0x7f0d004f
 int id action0 0x7f0d0052
 int id action_bar 0x7f0d0040
 int id action_bar_activity_content 0x7f0d0000
@@ -469,9 +472,6 @@ int id line1 0x7f0d0057
 int id line3 0x7f0d005b
 int id listMode 0x7f0d0009
 int id list_item 0x7f0d002a
-int id main_button 0x7f0d0050
-int id main_edittext 0x7f0d0051
-int id main_textview 0x7f0d004f
 int id media_actions 0x7f0d0055
 int id middle 0x7f0d0015
 int id multiply 0x7f0d001e

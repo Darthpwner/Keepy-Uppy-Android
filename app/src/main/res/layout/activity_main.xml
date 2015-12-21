@@ -3,46 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/main_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/textView"/>
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:id="@+id/TitlePageScene">
 
     <!-- This nested layout contains views of its own -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <!-- Set OnClickListener to trigger results when pressed -->
-        <Button
-            android:id="@+id/main_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:text="@string/button" />
-        <!-- Shows an image from your drawable resources -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/ic_launcher" />
-        <!-- Closing tag for the horizontal nested layout -->
-    </LinearLayout>
 
 
     <!-- Displays keyboard when touched -->
-    <EditText
-        android:id="@+id/main_edittext"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:hint="@string/hint" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Keepy Uppy"
+        android:id="@+id/Title"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:textColor="#ff0648ff"
+        android:textSize="70sp"
+        android:background="#fff9ff14" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/Start"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:textColor="#ffff1220"
+        android:background="#ff254bff"
+        android:textSize="50sp" />
+
 </LinearLayout>
