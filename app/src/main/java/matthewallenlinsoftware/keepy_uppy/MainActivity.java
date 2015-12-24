@@ -1,5 +1,6 @@
 package matthewallenlinsoftware.keepy_uppy;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -12,6 +13,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Creates MediaPlayer with that specific file
+        MediaPlayer mplayer = MediaPlayer.create(this, R.raw.start);
+
+        mplayer.start();    //Plays the music
     }
 
     @Override
