@@ -1538,7 +1538,6 @@ containing a value of this type.
         public static final int rules=0x7f020046;
     }
     public static final class id {
-        public static final int BouncingBallGif=0x7f0d0051;
         public static final int Start=0x7f0d0052;
         public static final int Title=0x7f0d0050;
         public static final int TitlePageScene=0x7f0d004f;
@@ -1633,6 +1632,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0d002e;
         public static final int up=0x7f0d0008;
         public static final int useLogo=0x7f0d0012;
+        public static final int viewGif=0x7f0d0051;
         public static final int withText=0x7f0d001a;
         public static final int wrap_content=0x7f0d001d;
     }

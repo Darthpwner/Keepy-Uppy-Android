@@ -13,6 +13,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private void startMenuMusic(MediaPlayer mplayer) {
         mplayer = MediaPlayer.create(this, R.raw.start);    //Creates MediaPlayer with that specific file
 
+        PlayGifView pGif = (PlayGifView) findViewById(R.id.viewGif);
+        pGif.setImageResource(R.drawable.bouncing_ball);
+
         mplayer.setLooping(true);   //Song plays forever
 
         mplayer.start();    //Plays the music

@@ -24,13 +24,6 @@
         android:background="#fff9ff14"
         android:layout_margin="0dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/BouncingBallGif"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.04"
-        android:src="@drawable/bouncing_ball" />
 
     <Button
         android:layout_width="180dp"

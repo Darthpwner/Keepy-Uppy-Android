@@ -421,7 +421,6 @@ int drawable forest 0x7f020044
 int drawable ic_launcher 0x7f020045
 int drawable notification_template_icon_bg 0x7f020047
 int drawable rules 0x7f020046
-int id BouncingBallGif 0x7f0d0051
 int id Start 0x7f0d0052
 int id Title 0x7f0d0050
 int id TitlePageScene 0x7f0d004f
@@ -516,6 +515,7 @@ int id title_template 0x7f0d002f
 int id topPanel 0x7f0d002e
 int id up 0x7f0d0008
 int id useLogo 0x7f0d0012
+int id viewGif 0x7f0d0051
 int id withText 0x7f0d001a
 int id wrap_content 0x7f0d001d
 int integer abc_config_activityDefaultDur 0x7f0b0001
