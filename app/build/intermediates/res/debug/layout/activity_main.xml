@@ -25,7 +25,7 @@
         android:layout_margin="0dp" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/BouncingBallGif"
         android:layout_gravity="center_horizontal"

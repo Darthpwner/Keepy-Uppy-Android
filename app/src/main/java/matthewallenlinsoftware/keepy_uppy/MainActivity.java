@@ -8,17 +8,23 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
+    MediaPlayer mplayer;    //Used to play music
+
+    private void startMenuMusic(MediaPlayer mplayer) {
+        mplayer = MediaPlayer.create(this, R.raw.start);    //Creates MediaPlayer with that specific file
+
+        mplayer.setLooping(true);   //Song plays forever
+
+        mplayer.start();    //Plays the music
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Creates MediaPlayer with that specific file
-        MediaPlayer mplayer = MediaPlayer.create(this, R.raw.start);
 
-        mplayer.setLooping(true);   //Song plays forever
-
-        mplayer.start();    //Plays the music
+        startMenuMusic(mplayer);
     }
 
     @Override
