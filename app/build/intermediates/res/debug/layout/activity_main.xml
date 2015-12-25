@@ -32,8 +32,6 @@
         android:layout_weight="0.04"
         android:src="@drawable/bouncing_ball" />
 
-
-
     <Button
         android:layout_width="180dp"
         android:layout_height="wrap_content"
