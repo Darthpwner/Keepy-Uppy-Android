@@ -20,7 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.04"
         android:textColor="#ff0648ff"
-        android:textSize="70sp"
+        android:textSize="65sp"
         android:background="#fff9ff14"
         android:layout_margin="0dp" />
 
@@ -42,7 +42,7 @@
         android:textColor="#ffff1220"
         android:background="#ff254bff"
         android:textSize="50sp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="200dp"
         android:layout_marginBottom="50dp" />
 
 </LinearLayout>
