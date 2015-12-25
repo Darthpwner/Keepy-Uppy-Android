@@ -33,6 +33,7 @@
         android:textColor="#ffff1220"
         android:background="#ff254bff"
         android:textSize="50sp"
-        android:elevation="100dp" />
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="50dp" />
 
 </LinearLayout>
