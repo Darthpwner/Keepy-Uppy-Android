@@ -16,6 +16,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         //Creates MediaPlayer with that specific file
         MediaPlayer mplayer = MediaPlayer.create(this, R.raw.start);
 
+        mplayer.setLooping(true);   //Song plays forever
+
         mplayer.start();    //Plays the music
     }
 

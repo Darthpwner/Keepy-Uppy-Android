@@ -32,6 +32,7 @@
         android:layout_weight="0.04"
         android:textColor="#ffff1220"
         android:background="#ff254bff"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:elevation="100dp" />
 
 </LinearLayout>
