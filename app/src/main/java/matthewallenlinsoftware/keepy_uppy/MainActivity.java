@@ -9,24 +9,29 @@ import android.view.View;
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     MediaPlayer mplayer;    //Used to play music
+    PlayGifView pGif;   //Used to animate the GIF
+
+    private void animateGif(PlayGifView pGif) {
+        pGif = (PlayGifView) findViewById(R.id.viewGif);
+        pGif.setImageResource(R.drawable.bouncing_ball);
+    }
 
     private void startMenuMusic(MediaPlayer mplayer) {
         mplayer = MediaPlayer.create(this, R.raw.start);    //Creates MediaPlayer with that specific file
-
-        PlayGifView pGif = (PlayGifView) findViewById(R.id.viewGif);
-        pGif.setImageResource(R.drawable.bouncing_ball);
 
         mplayer.setLooping(true);   //Song plays forever
 
         mplayer.start();    //Plays the music
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        animateGif(pGif);
+        
         startMenuMusic(mplayer);
     }
 
