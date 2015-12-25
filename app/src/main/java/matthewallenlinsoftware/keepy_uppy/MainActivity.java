@@ -31,7 +31,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         animateGif(pGif);
-        
+
         startMenuMusic(mplayer);
     }
 

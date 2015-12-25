@@ -56,7 +56,7 @@ public class PlayGifView extends View {
             drawGif(canvas);
             invalidate();
         }else{
-            drawGif(canvas);
+            drawGif(canvas);    //NULLPTR EXCEPTION
         }
     }
 
@@ -74,7 +74,7 @@ public class PlayGifView extends View {
     }
 
     private void drawGif(Canvas canvas) {
-        mMovie.setTime(mCurrentAnimationTime);
+        mMovie.setTime(mCurrentAnimationTime);  //NULLPTR EXCEPTION
         mMovie.draw(canvas, 0, 0);
         canvas.restore();
     }
