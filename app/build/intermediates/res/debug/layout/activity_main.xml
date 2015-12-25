@@ -42,7 +42,7 @@
         android:textColor="#ffff1220"
         android:background="#ff254bff"
         android:textSize="50sp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp" />
 
 </LinearLayout>
