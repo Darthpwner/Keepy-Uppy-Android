@@ -21,7 +21,8 @@
         android:layout_weight="0.04"
         android:textColor="#ff0648ff"
         android:textSize="70sp"
-        android:background="#fff9ff14" />
+        android:background="#fff9ff14"
+        android:layout_margin="0dp" />
 
     <Button
         android:layout_width="180dp"
