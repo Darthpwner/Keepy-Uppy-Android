@@ -1669,22 +1669,30 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040016;
         public static final int abc_select_dialog_material=0x7f040017;
         public static final int abc_simple_dropdown_hint=0x7f040018;
-        public static final int activity_main=0x7f040019;
-        public static final int notification_media_action=0x7f04001a;
-        public static final int notification_media_cancel_action=0x7f04001b;
-        public static final int notification_template_big_media=0x7f04001c;
-        public static final int notification_template_big_media_narrow=0x7f04001d;
-        public static final int notification_template_lines=0x7f04001e;
-        public static final int notification_template_media=0x7f04001f;
-        public static final int notification_template_part_chronometer=0x7f040020;
-        public static final int notification_template_part_time=0x7f040021;
-        public static final int select_dialog_item_material=0x7f040022;
-        public static final int select_dialog_multichoice_material=0x7f040023;
-        public static final int select_dialog_singlechoice_material=0x7f040024;
-        public static final int support_simple_spinner_dropdown_item=0x7f040025;
+        public static final int activity_choose_background=0x7f040019;
+        public static final int activity_choose_ball=0x7f04001a;
+        public static final int activity_gameplay=0x7f04001b;
+        public static final int activity_main=0x7f04001c;
+        public static final int activity_rules=0x7f04001d;
+        public static final int notification_media_action=0x7f04001e;
+        public static final int notification_media_cancel_action=0x7f04001f;
+        public static final int notification_template_big_media=0x7f040020;
+        public static final int notification_template_big_media_narrow=0x7f040021;
+        public static final int notification_template_lines=0x7f040022;
+        public static final int notification_template_media=0x7f040023;
+        public static final int notification_template_part_chronometer=0x7f040024;
+        public static final int notification_template_part_time=0x7f040025;
+        public static final int select_dialog_item_material=0x7f040026;
+        public static final int select_dialog_multichoice_material=0x7f040027;
+        public static final int select_dialog_singlechoice_material=0x7f040028;
+        public static final int support_simple_spinner_dropdown_item=0x7f040029;
     }
     public static final class menu {
-        public static final int menu_main=0x7f0e0000;
+        public static final int menu_choose_background=0x7f0e0000;
+        public static final int menu_choose_ball=0x7f0e0001;
+        public static final int menu_gameplay=0x7f0e0002;
+        public static final int menu_main=0x7f0e0003;
+        public static final int menu_rules=0x7f0e0004;
     }
     public static final class mipmap {
         public static final int keepy_uppy_icon=0x7f030000;
@@ -1717,9 +1725,14 @@ containing a value of this type.
         public static final int action_settings=0x7f070011;
         public static final int app_name=0x7f070012;
         public static final int button=0x7f070013;
-        public static final int hint=0x7f070014;
-        public static final int status_bar_notification_info_overflow=0x7f070015;
-        public static final int textView=0x7f070016;
+        public static final int hello_world=0x7f070014;
+        public static final int hint=0x7f070015;
+        public static final int status_bar_notification_info_overflow=0x7f070016;
+        public static final int textView=0x7f070017;
+        public static final int title_activity_choose_background=0x7f070018;
+        public static final int title_activity_choose_ball=0x7f070019;
+        public static final int title_activity_gameplay=0x7f07001a;
+        public static final int title_activity_rules=0x7f07001b;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090073;

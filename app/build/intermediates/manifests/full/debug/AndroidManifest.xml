@@ -8,6 +8,14 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="22" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/keepy_uppy_icon"
@@ -21,6 +29,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="matthewallenlinsoftware.keepy_uppy.choose_ball"
+            android:label="@string/title_activity_choose_ball" >
+        </activity>
+        <activity
+            android:name="matthewallenlinsoftware.keepy_uppy.choose_background"
+            android:label="@string/title_activity_choose_background" >
+        </activity>
+        <activity
+            android:name="matthewallenlinsoftware.keepy_uppy.gameplay"
+            android:label="@string/title_activity_gameplay" >
+        </activity>
+        <activity
+            android:name="matthewallenlinsoftware.keepy_uppy.rules"
+            android:label="@string/title_activity_rules" >
         </activity>
     </application>
 

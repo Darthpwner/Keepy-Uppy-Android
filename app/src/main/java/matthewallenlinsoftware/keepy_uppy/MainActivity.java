@@ -1,5 +1,6 @@
 package matthewallenlinsoftware.keepy_uppy;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -44,7 +45,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        // Take what was typed into the EditText
-        // and use in TextView
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), choose_ball.class);
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
     }
 }
