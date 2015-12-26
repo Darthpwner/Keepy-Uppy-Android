@@ -7,9 +7,15 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
 
+import matthewallenlinsoftware.keepy_uppy.Music.Music;
+
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     MediaPlayer mplayer;    //Used to play music
+    Boolean songStarted = false;    //Determines if the song started playing
+
+    Music music;    //Scaling issues
+
     PlayGifView pGif;   //Used to animate the GIF
 
     private void animateGif(PlayGifView pGif) {
@@ -33,7 +39,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         animateGif(pGif);
 
-        startMenuMusic(mplayer);
+        if(songStarted == false) {
+            System.out.println("CHRISTINE PANG");
+            startMenuMusic(mplayer);
+            songStarted = true;
+        }
     }
 
     @Override
