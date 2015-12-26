@@ -75,7 +75,7 @@ public class PlayGifView extends View {
 
     private void drawGif(Canvas canvas) {
         mMovie.setTime(mCurrentAnimationTime);  //NULLPTR EXCEPTION
-        mMovie.draw(canvas, 0, 0);
+        mMovie.draw(canvas, 10, 10);
         canvas.restore();
     }
 
