@@ -12,9 +12,8 @@ import matthewallenlinsoftware.keepy_uppy.Music.Music;
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     MediaPlayer mplayer;    //Used to play music
-    Boolean songStarted = false;    //Determines if the song started playing
 
-    Music music;    //Scaling issues
+    Music music = new Music();    //Scaling issues
 
     PlayGifView pGif;   //Used to animate the GIF
 
@@ -39,10 +38,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         animateGif(pGif);
 
-        if(songStarted == false) {
+        if(music.getStartSongStarted() == false) {
             System.out.println("CHRISTINE PANG");
             startMenuMusic(mplayer);
-            songStarted = true;
+            music.setStartSongStarted(true);
         }
     }
 
