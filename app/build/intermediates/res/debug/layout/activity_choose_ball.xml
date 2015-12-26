@@ -61,5 +61,14 @@
         android:focusableInTouchMode="false"
         android:onClick="onClickBackArrow" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/choose_ball_title"
+        android:layout_centerHorizontal="true"
+        android:onClick="moveForward" />
+
 </RelativeLayout>
 <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/src/main/res/layout/activity_choose_ball.xml -->

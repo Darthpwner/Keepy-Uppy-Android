@@ -11,7 +11,7 @@ import matthewallenlinsoftware.keepy_uppy.Music.Music;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
-    MediaPlayer mplayer;    //Used to play music
+    static MediaPlayer mplayer;    //Used to play music
 
     Music music = new Music();    //Scaling issues
 

@@ -14,6 +14,8 @@ public class choose_ball extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_ball);
+
+
     }
 
     @Override
@@ -41,6 +43,15 @@ public class choose_ball extends ActionBarActivity {
     public void onClickBackArrow(View view) {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), MainActivity.class);
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
+    }
+
+    //Temporary
+    public void moveForward(View view) {
+        //Starting a new Ivoidntent
+        Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
 
         //Sending data to another Activity
         startActivity(nextScreen);

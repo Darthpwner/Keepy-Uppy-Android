@@ -1,9 +1,11 @@
 package matthewallenlinsoftware.keepy_uppy;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class choose_background extends ActionBarActivity {
@@ -34,5 +36,22 @@ public class choose_background extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClickBackArrow(View view) {
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), choose_ball.class);
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
+    }
+
+    //Temporary
+    public void moveForward(View view) {
+        //Starting a new Ivoidntent
+        Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
     }
 }
