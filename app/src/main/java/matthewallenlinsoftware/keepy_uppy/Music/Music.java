@@ -1,9 +1,14 @@
 package matthewallenlinsoftware.keepy_uppy.Music;
 
+import android.media.MediaPlayer;
+
+import matthewallenlinsoftware.keepy_uppy.R;
+
 /**
  * Created by Darthpwner on 12/25/15.
  */
 public class Music {
+    static MediaPlayer mplayer;    //Used to play music
     private static Boolean startSongStarted = false;
     private static Boolean gameplaySongStarted = false;
 
@@ -12,16 +17,24 @@ public class Music {
         return startSongStarted;
     }
 
-   public Boolean getGameplaySongStarted() {
+    public Boolean getGameplaySongStarted() {
         return gameplaySongStarted;
     }
 
     //Setters
-   public void setStartSongStarted(Boolean value) {
+    public void setStartSongStarted(Boolean value) {
         startSongStarted = value;
     }
 
     public void setGameplaySongStarted(Boolean value) {
         gameplaySongStarted = value;
+    }
+
+    public void startMenuMusic(MediaPlayer mplayer) {
+        mplayer = MediaPlayer.create(getApplicationContext(), R.raw.start);    //Creates MediaPlayer with that specific file
+
+        mplayer.setLooping(true);   //Song plays forever
+
+        mplayer.start();    //Plays the music
     }
 }
