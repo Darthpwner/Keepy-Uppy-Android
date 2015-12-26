@@ -1,9 +1,11 @@
 package matthewallenlinsoftware.keepy_uppy;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class choose_ball extends ActionBarActivity {
@@ -34,5 +36,13 @@ public class choose_ball extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClickBackArrow(View view) {
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), MainActivity.class);
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
     }
 }

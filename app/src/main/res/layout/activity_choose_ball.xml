@@ -50,4 +50,15 @@
         android:layout_toRightOf="@+id/choose_ball_title"
         android:layout_toEndOf="@+id/choose_ball_title" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_arrow_button"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/beach_ball_button"
+        android:layout_toEndOf="@+id/beach_ball_button"
+        android:focusableInTouchMode="false"
+        android:onClick="onClickBackArrow" />
+
 </RelativeLayout>
