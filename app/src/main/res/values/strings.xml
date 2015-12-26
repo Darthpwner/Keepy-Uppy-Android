@@ -5,4 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="button">Update The TextView</string>
     <string name="hint">A Name</string>
+    <string name="title_activity_choose_ball">choose_ball</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_choose_background">choose_background</string>
+    <string name="title_activity_gameplay">gameplay</string>
+    <string name="title_activity_rules">rules</string>
 </resources>
