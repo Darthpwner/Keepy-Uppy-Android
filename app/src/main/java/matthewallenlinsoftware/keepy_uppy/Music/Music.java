@@ -2,8 +2,6 @@ package matthewallenlinsoftware.keepy_uppy.Music;
 
 import android.media.MediaPlayer;
 
-import matthewallenlinsoftware.keepy_uppy.R;
-
 /**
  * Created by Darthpwner on 12/25/15.
  */
@@ -31,7 +29,7 @@ public class Music {
     }
 
     public void startMenuMusic(MediaPlayer mplayer) {
-        mplayer = MediaPlayer.create(getApplicationContext(), R.raw.start);    //Creates MediaPlayer with that specific file
+        //mplayer = MediaPlayer.create(getApplicationContext(), R.raw.start);    //Creates MediaPlayer with that specific file
 
         mplayer.setLooping(true);   //Song plays forever
 
