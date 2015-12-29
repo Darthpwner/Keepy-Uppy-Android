@@ -456,8 +456,8 @@ int id cancel_action 0x7f0d0061
 int id checkbox 0x7f0d0038
 int id choose_background 0x7f0d004f
 int id choose_background_title 0x7f0d0050
-int id choose_ball_background 0x7f0d0057
-int id choose_ball_title 0x7f0d0056
+int id choose_ball_background 0x7f0d0056
+int id choose_ball_title 0x7f0d0057
 int id chronometer 0x7f0d0067
 int id collapseActionView 0x7f0d0017
 int id contentPanel 0x7f0d0031

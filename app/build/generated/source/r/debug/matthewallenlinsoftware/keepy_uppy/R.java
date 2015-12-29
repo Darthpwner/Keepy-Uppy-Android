@@ -1573,8 +1573,8 @@ containing a value of this type.
         public static final int checkbox=0x7f0d0038;
         public static final int choose_background=0x7f0d004f;
         public static final int choose_background_title=0x7f0d0050;
-        public static final int choose_ball_background=0x7f0d0057;
-        public static final int choose_ball_title=0x7f0d0056;
+        public static final int choose_ball_background=0x7f0d0056;
+        public static final int choose_ball_title=0x7f0d0057;
         public static final int chronometer=0x7f0d0067;
         public static final int collapseActionView=0x7f0d0017;
         public static final int contentPanel=0x7f0d0031;
