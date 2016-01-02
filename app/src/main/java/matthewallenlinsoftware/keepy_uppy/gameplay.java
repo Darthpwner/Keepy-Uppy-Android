@@ -1,17 +1,32 @@
 package matthewallenlinsoftware.keepy_uppy;
 
-import android.support.v7.app.ActionBarActivity;
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
 public class gameplay extends ActionBarActivity {
 
+    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameplay);
+
+        //TODO: High score
+//        //MODE_PRIVATE allows only your app to access this data
+//        SharedPreferences sharedPreferences = this.getSharedPreferences("matthewallenlinsoftware.keepy_uppy", Context.MODE_PRIVATE);
+//
+//        //Saves data
+//        sharedPreferences.edit().putInt("username", "rob").apply();
+//
+//        //Get the data back
+//        String username = sharedPreferences.getString("username", "");
+//
+//        Log.i("username", username);
     }
 
     @Override

@@ -3,7 +3,7 @@
     package="matthewallenlinsoftware.keepy_uppy" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="22" />
 
     <android:uses-permission
