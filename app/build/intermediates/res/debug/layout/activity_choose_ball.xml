@@ -32,38 +32,43 @@
         android:textColor="#fffbfffb" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/beach_ball_button"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:src="@drawable/beach_ball"
+        android:scaleType="fitXY" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/basketball_button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/basketball" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/bowling_ball_button"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/choose_ball_title"
-        android:layout_toEndOf="@+id/choose_ball_title" />
+        android:layout_toEndOf="@+id/choose_ball_title"
+        android:scaleType="fitXY"
+        android:src="@drawable/bowling_ball" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
         android:id="@+id/back_arrow_button"
         android:src="@drawable/back_arrow"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/beach_ball_button"
-        android:layout_toEndOf="@+id/beach_ball_button"
         android:focusableInTouchMode="false"
-        android:onClick="onClickBackArrow" />
+        android:onClick="onClickBackArrow"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
