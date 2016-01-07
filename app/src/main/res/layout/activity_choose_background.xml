@@ -40,7 +40,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/desert"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:onClick="moveForward" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -49,7 +50,8 @@
         android:layout_alignTop="@+id/desert_button"
         android:layout_centerHorizontal="true"
         android:src="@drawable/beach"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:onClick="moveForward" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -59,7 +61,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:src="@drawable/forest"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:onClick="moveForward" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -71,15 +74,4 @@
         android:layout_alignEnd="@+id/choose_background_title"
         android:onClick="onClickBackArrow" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_below="@+id/choose_background_title"
-        android:layout_toRightOf="@+id/desert_button"
-        android:layout_toEndOf="@+id/desert_button"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
-        android:onClick="moveForward" />
 </RelativeLayout>
