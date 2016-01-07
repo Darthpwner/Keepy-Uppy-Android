@@ -77,4 +77,34 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most Air Time"
+        android:id="@+id/desert_text_view"
+        android:layout_above="@+id/desert_button"
+        android:layout_alignRight="@+id/desert_button"
+        android:layout_alignEnd="@+id/desert_button"
+        android:textColor="#ff020202" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Air Time"
+        android:id="@+id/beach_text_view"
+        android:layout_above="@+id/beach_button"
+        android:layout_alignLeft="@+id/beach_button"
+        android:layout_alignStart="@+id/beach_button"
+        android:textColor="#ff0c0c0c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Least AIr Time"
+        android:id="@+id/forest_text_view"
+        android:layout_above="@+id/forest_button"
+        android:layout_alignRight="@+id/forest_button"
+        android:layout_alignEnd="@+id/forest_button"
+        android:textColor="#ff030303" />
+
 </RelativeLayout>

@@ -35,12 +35,12 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/beach_ball_button"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:src="@drawable/beach_ball"
         android:scaleType="fitXY"
-        android:onClick="moveForward" />
+        android:onClick="moveForward"
+        android:layout_below="@+id/basketball_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -56,12 +56,12 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/bowling_ball_button"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/choose_ball_title"
-        android:layout_toEndOf="@+id/choose_ball_title"
         android:scaleType="fitXY"
         android:src="@drawable/bowling_ball"
-        android:onClick="moveForward" />
+        android:onClick="moveForward"
+        android:layout_below="@+id/basketball_text_view"
+        android:layout_alignLeft="@+id/bowling_ball_text_view"
+        android:layout_alignStart="@+id/bowling_ball_text_view" />
 
     <ImageButton
         android:layout_width="500dp"
@@ -76,6 +76,38 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most Bounce"
+        android:id="@+id/beach_ball_text_view"
+        android:textColor="#f5f7fffd"
+        android:layout_above="@+id/beach_ball_button"
+        android:layout_alignRight="@+id/beach_ball_button"
+        android:layout_alignEnd="@+id/beach_ball_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Bounce"
+        android:id="@+id/basketball_text_view"
+        android:layout_above="@+id/basketball_button"
+        android:layout_alignRight="@+id/basketball_button"
+        android:layout_alignEnd="@+id/basketball_button"
+        android:textColor="#fff5fffb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Least Bounce"
+        android:id="@+id/bowling_ball_text_view"
+        android:textColor="#fffafbff"
+        android:layout_above="@+id/bowling_ball_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
 
 </RelativeLayout>
 <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/src/main/res/layout/activity_choose_ball.xml -->
