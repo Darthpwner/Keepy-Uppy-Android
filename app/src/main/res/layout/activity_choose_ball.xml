@@ -71,6 +71,7 @@
         android:focusableInTouchMode="false"
         android:onClick="onClickBackArrow"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
 
 </RelativeLayout>

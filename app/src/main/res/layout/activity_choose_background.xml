@@ -65,13 +65,16 @@
         android:onClick="moveForward" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
         android:id="@+id/back_arrow_button"
         android:src="@drawable/back_arrow"
+        android:onClick="onClickBackArrow"
+        android:scaleType="fitXY"
         android:layout_below="@+id/desert_button"
-        android:layout_alignRight="@+id/choose_background_title"
-        android:layout_alignEnd="@+id/choose_background_title"
-        android:onClick="onClickBackArrow" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
 
 </RelativeLayout>
