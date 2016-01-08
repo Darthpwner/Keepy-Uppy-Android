@@ -31,14 +31,15 @@
     <ImageButton
         android:layout_width="500dp"
         android:layout_height="100dp"
-        android:id="@+id/imageButton"
+        android:id="@+id/back_arrow_button"
         android:layout_alignBottom="@+id/rules_background"
         android:src="@drawable/back_arrow"
         android:scaleType="fitXY"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="52dp"
         android:layout_marginRight="50dp"
-        android:onClick="onClickBackArrow" />
+        android:onClick="onClickBackArrow"
+        android:background="@null" />
 
 </RelativeLayout>
 <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/src/main/res/layout/activity_rules.xml -->

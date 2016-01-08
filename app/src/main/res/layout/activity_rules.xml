@@ -26,7 +26,9 @@
         android:layout_alignTop="@+id/rules_background"
         android:layout_centerHorizontal="true"
         android:textSize="48dp"
-        android:textColor="#ff14ff26" />
+        android:textColor="#ff14ff26"
+        android:typeface="sans"
+        android:textStyle="bold" />
 
     <ImageButton
         android:layout_width="500dp"

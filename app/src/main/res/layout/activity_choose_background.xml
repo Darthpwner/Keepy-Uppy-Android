@@ -30,7 +30,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:onClick="onClickBackArrow" />
+        android:onClick="onClickBackArrow"
+        android:typeface="sans"
+        android:textStyle="bold" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -89,7 +91,9 @@
         android:layout_above="@+id/desert_button"
         android:layout_alignRight="@+id/desert_button"
         android:layout_alignEnd="@+id/desert_button"
-        android:textColor="#ff020202" />
+        android:textColor="#ff020202"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,7 +103,9 @@
         android:layout_above="@+id/beach_button"
         android:layout_alignLeft="@+id/beach_button"
         android:layout_alignStart="@+id/beach_button"
-        android:textColor="#ff0c0c0c" />
+        android:textColor="#ff0c0c0c"
+        android:typeface="sans"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -109,6 +115,8 @@
         android:layout_above="@+id/forest_button"
         android:layout_alignRight="@+id/forest_button"
         android:layout_alignEnd="@+id/forest_button"
-        android:textColor="#ff030303" />
+        android:textColor="#ff030303"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
 </RelativeLayout>

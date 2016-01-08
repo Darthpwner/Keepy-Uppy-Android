@@ -40,7 +40,8 @@
         android:onClick="moveForward"
         android:layout_below="@+id/basketball_text_view"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@null" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -50,7 +51,8 @@
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
         android:src="@drawable/basketball"
-        android:onClick="moveForward" />
+        android:onClick="moveForward"
+        android:background="@null" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -61,7 +63,8 @@
         android:onClick="moveForward"
         android:layout_below="@+id/basketball_text_view"
         android:layout_alignLeft="@+id/bowling_ball_text_view"
-        android:layout_alignStart="@+id/bowling_ball_text_view" />
+        android:layout_alignStart="@+id/bowling_ball_text_view"
+        android:background="@null" />
 
     <ImageButton
         android:layout_width="500dp"
@@ -75,7 +78,8 @@
         android:layout_below="@+id/beach_ball_button"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp" />
+        android:layout_marginRight="50dp"
+        android:background="@null" />
 
     <TextView
         android:layout_width="wrap_content"
