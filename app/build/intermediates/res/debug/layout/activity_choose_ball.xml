@@ -29,7 +29,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:textColor="#fffbfffb" />
+        android:textColor="#fffbfffb"
+        android:typeface="sans"
+        android:textStyle="bold" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -89,7 +91,9 @@
         android:textColor="#f5f7fffd"
         android:layout_above="@+id/beach_ball_button"
         android:layout_alignRight="@+id/beach_ball_button"
-        android:layout_alignEnd="@+id/beach_ball_button" />
+        android:layout_alignEnd="@+id/beach_ball_button"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,7 +103,9 @@
         android:layout_above="@+id/basketball_button"
         android:layout_alignRight="@+id/basketball_button"
         android:layout_alignEnd="@+id/basketball_button"
-        android:textColor="#fff5fffb" />
+        android:textColor="#fff5fffb"
+        android:typeface="sans"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -111,7 +117,9 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="27dp"
-        android:layout_marginEnd="27dp" />
+        android:layout_marginEnd="27dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
 </RelativeLayout>
 <!-- From: file:/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/src/main/res/layout/activity_choose_ball.xml -->
