@@ -6,16 +6,21 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 
 public class choose_ball extends ActionBarActivity {
+
+    ImageView beachBall, basketBall, bowlingBall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_ball);
 
-
+        beachBall = (ImageView) findViewById(R.id.beach_ball_button);
+        basketBall = (ImageView) findViewById(R.id.basketball_button);
+        bowlingBall = (ImageView) findViewById(R.id.bowling_ball_button);
     }
 
     @Override
