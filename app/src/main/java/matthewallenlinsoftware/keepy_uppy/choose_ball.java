@@ -58,13 +58,13 @@ public class choose_ball extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
 
-        /*if (beachBall)
-            pass beachBall data
-           else if(basketBall)
-           pass basketball data
-           else
-            pass bowling ball data
-         */
+        if(beachBall.isSelected()) {
+            System.out.println("Beach ball");
+        } else if(basketBall.isSelected()) {
+            System.out.println("Basketball");
+        } else {
+            System.out.println("Bowling ball");
+        }
 
         //Sending data to another Activity
         startActivity(nextScreen);
