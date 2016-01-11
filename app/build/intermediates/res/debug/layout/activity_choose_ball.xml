@@ -39,7 +39,7 @@
         android:id="@+id/beach_ball_button"
         android:src="@drawable/beach_ball"
         android:scaleType="fitXY"
-        android:onClick="moveForward"
+        android:onClick="onClickBeachBall"
         android:layout_below="@+id/basketball_text_view"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -53,7 +53,7 @@
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
         android:src="@drawable/basketball"
-        android:onClick="moveForward"
+        android:onClick="onClickBasketball"
         android:background="@null" />
 
     <ImageButton
@@ -62,7 +62,7 @@
         android:id="@+id/bowling_ball_button"
         android:scaleType="fitXY"
         android:src="@drawable/bowling_ball"
-        android:onClick="moveForward"
+        android:onClick="onClickBowlingBall"
         android:layout_below="@+id/basketball_text_view"
         android:layout_alignLeft="@+id/bowling_ball_text_view"
         android:layout_alignStart="@+id/bowling_ball_text_view"

@@ -3,6 +3,7 @@ package matthewallenlinsoftware.keepy_uppy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,11 +54,34 @@ public class choose_background extends ActionBarActivity {
         startActivity(nextScreen);
     }
 
-    //Temporary
-    
-    public void moveForward(View view) {
-        //Starting a new Ivoidntent
+    String temp = "";
+
+    //Forward clicks
+    public void onClickDesert(View view) {
+        //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
+
+        Log.i(temp, "Desert");
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
+    }
+
+    public void onClickBeach(View view) {
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
+
+        Log.i(temp, "Beach");
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
+    }
+
+    public void onClickForest(View view) {
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
+
+        Log.i(temp, "Forest");
 
         //Sending data to another Activity
         startActivity(nextScreen);

@@ -3,6 +3,7 @@ package matthewallenlinsoftware.keepy_uppy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,18 +54,34 @@ public class choose_ball extends ActionBarActivity {
         startActivity(nextScreen);
     }
 
-    //Temporary
-    public void moveForward(View view) {
+    String temp = "";
+
+    //Forward clicks
+    public void onClickBeachBall(View view) {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
 
-        if(beachBall.isSelected()) {
-            System.out.println("Beach ball");
-        } else if(basketBall.isSelected()) {
-            System.out.println("Basketball");
-        } else {
-            System.out.println("Bowling ball");
-        }
+        Log.i(temp, "BeachBall");
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
+    }
+
+    public void onClickBasketball(View view) {
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
+
+        Log.i(temp, "Basketball");
+
+        //Sending data to another Activity
+        startActivity(nextScreen);
+    }
+
+    public void onClickBowlingBall(View view) {
+        //Starting a new Intent
+        Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
+
+        Log.i(temp, "BowlingBall");
 
         //Sending data to another Activity
         startActivity(nextScreen);
