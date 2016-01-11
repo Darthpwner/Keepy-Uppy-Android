@@ -8,21 +8,58 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import matthewallenlinsoftware.keepy_uppy.Background.Background;
+import matthewallenlinsoftware.keepy_uppy.Background.Beach;
+import matthewallenlinsoftware.keepy_uppy.Background.Desert;
+import matthewallenlinsoftware.keepy_uppy.Background.Forest;
+import matthewallenlinsoftware.keepy_uppy.Ball.Ball;
+import matthewallenlinsoftware.keepy_uppy.Ball.Basketball;
+import matthewallenlinsoftware.keepy_uppy.Ball.BeachBall;
+import matthewallenlinsoftware.keepy_uppy.Ball.BowlingBall;
+
 
 public class gameplay extends ActionBarActivity {
 
-    String ball, background;
+    String ballData, backgroundData;
+    Ball ball;
+    Background background;
 
     private void grabChooseBallAndChooseBackgroundData() {
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
-            ball = extras.getString("ball");
-            background = extras.getString("background");
+            ballData = extras.getString("ball");
+            backgroundData = extras.getString("background");
 
             String temp = "";
 
-            Log.i(temp, ball);
-            Log.i(temp, background);
+            Log.i(temp, ballData);
+            Log.i(temp, backgroundData);
+        }
+    }
+
+    private void setBallProperties() {
+        if(ballData.equals("beachBall")) {
+            //Create beachBall
+            ball = new BeachBall();
+        } else if(ballData.equals("basketball")) {
+            //Create basketball
+            ball = new Basketball();
+        } else {
+            //Create bowling ball
+            ball = new BowlingBall();
+        }
+    }
+
+    private void setBackgroundProperties() {
+        if(backgroundData.equals("desert")) {
+            //Create desert
+            background = new Desert();
+        } else if(backgroundData.equals("beach")) {
+            //Create beach
+            background = new Beach();
+        } else {
+            //Create forest
+            background = new Forest();
         }
     }
 
@@ -33,6 +70,12 @@ public class gameplay extends ActionBarActivity {
         setContentView(R.layout.activity_gameplay);
 
         grabChooseBallAndChooseBackgroundData();
+
+        setBallProperties();
+
+        setBackgroundProperties();
+
+        Log.i("STOP", "STOP");
 
         //TODO: High score
 //        //MODE_PRIVATE allows only your app to access this data
