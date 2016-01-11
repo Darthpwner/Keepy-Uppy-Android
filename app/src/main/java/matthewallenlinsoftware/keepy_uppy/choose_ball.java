@@ -61,7 +61,9 @@ public class choose_ball extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
 
-        Log.i(temp, "BeachBall");
+        nextScreen.putExtra("ball", "beachBall");
+
+        //Log.i(temp, "BeachBall");
 
         //Sending data to another Activity
         startActivity(nextScreen);
@@ -71,7 +73,9 @@ public class choose_ball extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
 
-        Log.i(temp, "Basketball");
+        nextScreen.putExtra("ball", "basketball");
+
+       // Log.i(temp, "Basketball");
 
         //Sending data to another Activity
         startActivity(nextScreen);
@@ -81,7 +85,9 @@ public class choose_ball extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), choose_background.class);
 
-        Log.i(temp, "BowlingBall");
+        nextScreen.putExtra("ball", "bowlingBall");
+
+//        Log.i(temp, "BowlingBall");
 
         //Sending data to another Activity
         startActivity(nextScreen);

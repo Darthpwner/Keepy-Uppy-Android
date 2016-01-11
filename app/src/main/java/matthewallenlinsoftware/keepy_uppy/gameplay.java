@@ -4,17 +4,35 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
 public class gameplay extends ActionBarActivity {
 
+    String ball, background;
+
+    private void grabChooseBallAndChooseBackgroundData() {
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            ball = extras.getString("ball");
+            background = extras.getString("background");
+
+            String temp = "";
+
+            Log.i(temp, ball);
+            Log.i(temp, background);
+        }
+    }
+
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameplay);
+
+        grabChooseBallAndChooseBackgroundData();
 
         //TODO: High score
 //        //MODE_PRIVATE allows only your app to access this data

@@ -3,7 +3,6 @@ package matthewallenlinsoftware.keepy_uppy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,11 +12,25 @@ import android.widget.ImageButton;
 public class choose_background extends ActionBarActivity {
 
     ImageButton desert, beach, forest;
+    String ball;
+
+    private void grabChooseBallData() {
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            ball = extras.getString("ball");
+
+            String temp = "";
+
+      //      Log.i(temp, ball);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_background);
+
+        grabChooseBallData();
 
         desert = (ImageButton) findViewById(R.id.desert_button);
         beach = (ImageButton) findViewById(R.id.beach_button);
@@ -61,7 +74,10 @@ public class choose_background extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
 
-        Log.i(temp, "Desert");
+        nextScreen.putExtra("ball", ball);
+        nextScreen.putExtra("background", "desert");
+
+      //  Log.i(temp, "Desert");
 
         //Sending data to another Activity
         startActivity(nextScreen);
@@ -71,7 +87,10 @@ public class choose_background extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
 
-        Log.i(temp, "Beach");
+        nextScreen.putExtra("ball", ball);
+        nextScreen.putExtra("background", "beach");
+
+      //  Log.i(temp, "Beach");
 
         //Sending data to another Activity
         startActivity(nextScreen);
@@ -81,7 +100,10 @@ public class choose_background extends ActionBarActivity {
         //Starting a new Intent
         Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
 
-        Log.i(temp, "Forest");
+        nextScreen.putExtra("ball", ball);
+        nextScreen.putExtra("background", "forest");
+
+//        Log.i(temp, "Forest");
 
         //Sending data to another Activity
         startActivity(nextScreen);
