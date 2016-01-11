@@ -6,21 +6,21 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 
 
 public class choose_background extends ActionBarActivity {
 
-    ImageView desert, beach, forest;
+    ImageButton desert, beach, forest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_background);
 
-        desert = (ImageView) findViewById(R.id.desert_button);
-        beach = (ImageView) findViewById(R.id.beach_button);
-        forest = (ImageView) findViewById(R.id.forest_button);
+        desert = (ImageButton) findViewById(R.id.desert_button);
+        beach = (ImageButton) findViewById(R.id.beach_button);
+        forest = (ImageButton) findViewById(R.id.forest_button);
     }
 
     @Override
@@ -54,6 +54,7 @@ public class choose_background extends ActionBarActivity {
     }
 
     //Temporary
+    
     public void moveForward(View view) {
         //Starting a new Ivoidntent
         Intent nextScreen = new Intent(getApplicationContext(), gameplay.class);
