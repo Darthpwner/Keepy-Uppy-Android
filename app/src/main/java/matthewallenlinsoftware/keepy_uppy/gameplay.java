@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 
 import matthewallenlinsoftware.keepy_uppy.Background.Background;
 import matthewallenlinsoftware.keepy_uppy.Background.Beach;
@@ -23,6 +24,9 @@ public class gameplay extends ActionBarActivity {
     String ballData, backgroundData;
     Ball ball;
     Background background;
+
+    //BUGGY
+    RelativeLayout backgroundImage = (RelativeLayout) findViewById(R.id.backgroundImage);    //WHY DOES THIS SHIT CRASH?
 
     private void grabChooseBallAndChooseBackgroundData() {
         Bundle extras = getIntent().getExtras();
@@ -54,12 +58,17 @@ public class gameplay extends ActionBarActivity {
         if(backgroundData.equals("desert")) {
             //Create desert
             background = new Desert();
+
+            //BUGGY
+            backgroundImage.setBackgroundResource(R.drawable.desert);
         } else if(backgroundData.equals("beach")) {
             //Create beach
             background = new Beach();
+            backgroundImage.setBackgroundResource(R.drawable.beach);
         } else {
             //Create forest
             background = new Forest();
+            backgroundImage.setBackgroundResource(R.drawable.forest);
         }
     }
 
