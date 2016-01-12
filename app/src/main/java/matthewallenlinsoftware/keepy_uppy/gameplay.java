@@ -26,7 +26,7 @@ public class gameplay extends ActionBarActivity {
     Background background;
 
     //BUGGY
-    RelativeLayout backgroundImage = (RelativeLayout) findViewById(R.id.backgroundImage);    //WHY DOES THIS SHIT CRASH?
+    RelativeLayout backgroundImage;
 
     private void grabChooseBallAndChooseBackgroundData() {
         Bundle extras = getIntent().getExtras();
@@ -55,6 +55,8 @@ public class gameplay extends ActionBarActivity {
     }
 
     private void setBackgroundProperties() {
+        backgroundImage = (RelativeLayout) findViewById(R.id.backgroundImage);    //WHY DOES THIS SHIT CRASH?
+
         if(backgroundData.equals("desert")) {
             //Create desert
             background = new Desert();
