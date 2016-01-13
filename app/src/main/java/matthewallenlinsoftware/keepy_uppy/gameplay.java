@@ -24,8 +24,6 @@ public class gameplay extends ActionBarActivity {
     String ballData, backgroundData;
     Ball ball;
     Background background;
-
-    //BUGGY
     RelativeLayout backgroundImage;
 
     private void grabChooseBallAndChooseBackgroundData() {
@@ -55,7 +53,7 @@ public class gameplay extends ActionBarActivity {
     }
 
     private void setBackgroundProperties() {
-        backgroundImage = (RelativeLayout) findViewById(R.id.backgroundImage);    //WHY DOES THIS SHIT CRASH?
+        backgroundImage = (RelativeLayout) findViewById(R.id.backgroundImage);
 
         if(backgroundData.equals("desert")) {
             //Create desert
@@ -74,6 +72,21 @@ public class gameplay extends ActionBarActivity {
         }
     }
 
+    private void setUpScoreZone() {
+//        View v = new View(this);
+//        v.setLayoutParams(new LinearLayout.LayoutParams(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                5
+//        ));
+//        v.setBackgroundColor(Color.parseColor("#B3B3B3"));
+//
+//        LinearLayout.addView(v);
+    }
+
+    private void setUpDangerZone() {
+
+    }
+
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +98,10 @@ public class gameplay extends ActionBarActivity {
         setBallProperties();
 
         setBackgroundProperties();
+
+        setUpScoreZone();
+
+        setUpDangerZone();
 
         Log.i("STOP", "STOP");
 
