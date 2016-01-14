@@ -26,6 +26,10 @@ import matthewallenlinsoftware.keepy_uppy.Ball.BowlingBall;
 
 public class gameplay extends LayoutGameActivity {
 
+    //AndEngine variables//
+
+    //End of AndEngine variables//
+
     String ballData, backgroundData;
     Ball ball;
     Background background;
@@ -145,6 +149,7 @@ public class gameplay extends LayoutGameActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //AndEngine boiler plate code//
     @Override
     protected int getLayoutID() {
         return 0;
@@ -174,4 +179,5 @@ public class gameplay extends LayoutGameActivity {
     public void onPopulateScene(Scene pScene, OnPopulateSceneCallback pOnPopulateSceneCallback) throws IOException {
 
     }
+    //End of AndEngine boiler plate code//
 }

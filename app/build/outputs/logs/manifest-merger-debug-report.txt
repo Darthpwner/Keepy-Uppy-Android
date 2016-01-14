@@ -36,6 +36,8 @@ ADDED from AndroidManifest.xml:9:5
 		ADDED from AndroidManifest.xml:10:9
 android:uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:12:5
+MERGED from Keepy-Uppy:andEngine:unspecified:19:5
+MERGED from Keepy-Uppy:andEngine:unspecified:19:5
 	android:name
 		ADDED from AndroidManifest.xml:12:30
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -103,3 +105,23 @@ MERGED from Keepy-Uppy:andEngine:unspecified:11:5
 		ADDED from Keepy-Uppy:andEngine:unspecified:12:9
 	android:required
 		ADDED from Keepy-Uppy:andEngine:unspecified:13:9
+uses-permission#android.permission.WAKE_LOCK
+ADDED from Keepy-Uppy:andEngine:unspecified:15:5
+MERGED from Keepy-Uppy:andEngine:unspecified:15:5
+	android:name
+		ADDED from Keepy-Uppy:andEngine:unspecified:15:22
+uses-permission#android.permission.VIBRATE
+ADDED from Keepy-Uppy:andEngine:unspecified:16:5
+MERGED from Keepy-Uppy:andEngine:unspecified:16:5
+	android:name
+		ADDED from Keepy-Uppy:andEngine:unspecified:16:22
+uses-permission#android.permission.INTERNET
+ADDED from Keepy-Uppy:andEngine:unspecified:17:5
+MERGED from Keepy-Uppy:andEngine:unspecified:17:5
+	android:name
+		ADDED from Keepy-Uppy:andEngine:unspecified:17:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from Keepy-Uppy:andEngine:unspecified:18:5
+MERGED from Keepy-Uppy:andEngine:unspecified:18:5
+	android:name
+		ADDED from Keepy-Uppy:andEngine:unspecified:18:22
