@@ -174,8 +174,7 @@ public class gameplay extends LayoutGameActivity {
         EngineOptions engineOptions = new EngineOptions(true, ScreenOrientation.PORTRAIT_FIXED, new FillResolutionPolicy(), camera);
         engineOptions.getAudioOptions().setNeedsMusic(true).setNeedsSound(true);
         engineOptions.setWakeLockOptions(WakeLockOptions.SCREEN_ON);
-        return engineOptions;   //Code fucks up on the return. Error code below
-        //java.lang.RuntimeException: Unable to start activity ComponentInfo{matthewallenlinsoftware.keepy_uppy/matthewallenlinsoftware.keepy_uppy.gameplay}: java.lang.ClassCastException: android.widget.RelativeLayout cannot be cast to org.andengine.opengl.view.RenderSurfaceView
+        return engineOptions;
     }
 
     @Override
@@ -186,7 +185,7 @@ public class gameplay extends LayoutGameActivity {
     @Override
     public void onCreateScene(OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
         mEngine.registerUpdateHandler(new FPSLogger());
-        //java.lang.NullPointerException: Attempt to read from field 'org.andengine.engine.Engine org.andengine.opengl.view.EngineRenderer.mEngine' on a null object reference
+        //Attempt to read from field 'org.andengine.engine.Engine org.andengine.opengl.view.EngineRenderer.mEngine' on a null object reference
         currentScene = new Scene();
         currentScene.setBackground(new org.andengine.entity.scene.background.Background(0.09804f, 0.7274f, 0.8f));
     }
