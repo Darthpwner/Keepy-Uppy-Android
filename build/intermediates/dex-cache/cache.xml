@@ -2,11 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/Keepy-Uppy/andEnginePhysicsBox2DExtension/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-2df4e3c36a041b8ed8eb48318439f19f722b2793.jar" />
+        sha1="0b104fd8e133eb051912f78f6e9abbee765f1229">
+        <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/classes-ce0a0b1833598ae4e8f8c4c9d6eb656bf29bc91d.jar" />
+    </item>
+    <item
+        jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/classes-87b18c605634b51c197d5481952eb33b1e830efe.jar" />
     </item>
     <item
         jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
@@ -23,11 +30,18 @@
         <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-224a8909f31a3f525314d0879d668571a5abae36.jar" />
     </item>
     <item
-        jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/classes-87b18c605634b51c197d5481952eb33b1e830efe.jar" />
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-2df4e3c36a041b8ed8eb48318439f19f722b2793.jar" />
+    </item>
+    <item
+        jar="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/exploded-aar/Keepy-Uppy/andEngine/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="55b08eaca7f952978a77bc1274a74c5de61314f3">
+        <dex dex="/Users/Darthpwner/AndroidStudioProjects/Keepy-Uppy/app/build/intermediates/pre-dexed/debug/classes-e66451299a38403cddc0a32c072bb871f500c1a6.jar" />
     </item>
 
 </items>

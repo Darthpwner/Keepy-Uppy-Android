@@ -1113,14 +1113,14 @@ Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
 In AndEngine:
-* AndroidManifest.xml => AndEngine/src/main/AndroidManifest.xml
-* jni/ => AndEngine/src/main/jni/
-* libs/armeabi-v7a/libandengine.so => AndEngine/src/main/jniLibs/armeabi-v7a/libandengine.so
-* libs/armeabi/libandengine.so => AndEngine/src/main/jniLibs/armeabi/libandengine.so
-* libs/mips/libandengine.so => AndEngine/src/main/jniLibs/mips/libandengine.so
-* libs/x86/libandengine.so => AndEngine/src/main/jniLibs/x86/libandengine.so
-* res/ => AndEngine/src/main/res/
-* src/ => AndEngine/src/main/java/
+* AndroidManifest.xml => andEngine/src/main/AndroidManifest.xml
+* jni/ => andEngine/src/main/jni/
+* libs/armeabi-v7a/libandengine.so => andEngine/src/main/jniLibs/armeabi-v7a/libandengine.so
+* libs/armeabi/libandengine.so => andEngine/src/main/jniLibs/armeabi/libandengine.so
+* libs/mips/libandengine.so => andEngine/src/main/jniLibs/mips/libandengine.so
+* libs/x86/libandengine.so => andEngine/src/main/jniLibs/x86/libandengine.so
+* res/ => andEngine/src/main/res/
+* src/ => andEngine/src/main/java/
 In AndEnginePhysicsBox2DExtension:
 * AndroidManifest.xml => andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml
 * jni/ => andEnginePhysicsBox2DExtension/src/main/jni/
