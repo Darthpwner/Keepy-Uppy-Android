@@ -8,8 +8,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
+import org.andengine.engine.camera.Camera;
 import org.andengine.engine.options.EngineOptions;
+import org.andengine.engine.options.ScreenOrientation;
+import org.andengine.engine.options.WakeLockOptions;
+import org.andengine.engine.options.resolutionpolicy.FillResolutionPolicy;
 import org.andengine.entity.scene.Scene;
+import org.andengine.entity.util.FPSLogger;
 import org.andengine.ui.activity.LayoutGameActivity;
 
 import java.io.IOException;
@@ -27,7 +32,10 @@ import matthewallenlinsoftware.keepy_uppy.Ball.BowlingBall;
 public class gameplay extends LayoutGameActivity {
 
     //AndEngine variables//
-
+    private Camera camera;
+    private int CAMERA_WIDTH = 320;
+    private int CAMERA_HEIGHT = 480;
+    public Scene currentScene;
     //End of AndEngine variables//
 
     String ballData, backgroundData;
@@ -152,32 +160,38 @@ public class gameplay extends LayoutGameActivity {
     //AndEngine boiler plate code//
     @Override
     protected int getLayoutID() {
-        return 0;
+        return R.layout.activity_gameplay;
     }
 
     @Override
     protected int getRenderSurfaceViewID() {
-        return 0;
+        return R.id.backgroundImage;
     }
 
     @Override
     public EngineOptions onCreateEngineOptions() {
-        return null;
+        this.camera = new Camera(0,0, CAMERA_WIDTH, CAMERA_HEIGHT);
+        EngineOptions engineOptions = new EngineOptions(true, ScreenOrientation.PORTRAIT_FIXED, new FillResolutionPolicy(), camera);
+        engineOptions.getAudioOptions().setNeedsMusic(true).setNeedsSound(true);
+        engineOptions.setWakeLockOptions(WakeLockOptions.SCREEN_ON);
+        return engineOptions;
     }
 
     @Override
     public void onCreateResources(OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
-
+        pOnCreateResourcesCallback.onCreateResourcesFinished();
     }
 
     @Override
     public void onCreateScene(OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
-
+        mEngine.registerUpdateHandler(new FPSLogger());
+        currentScene = new Scene();
+        //currentScene.setBackground(new Background(0.09804f, 0.7274f, 0.8f));
     }
 
     @Override
     public void onPopulateScene(Scene pScene, OnPopulateSceneCallback pOnPopulateSceneCallback) throws IOException {
-
+        pOnPopulateSceneCallback.onPopulateSceneFinished();
     }
     //End of AndEngine boiler plate code//
 }
