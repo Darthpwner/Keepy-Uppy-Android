@@ -3,11 +3,16 @@ package matthewallenlinsoftware.keepy_uppy;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+
+import org.andengine.engine.options.EngineOptions;
+import org.andengine.entity.scene.Scene;
+import org.andengine.ui.activity.LayoutGameActivity;
+
+import java.io.IOException;
 
 import matthewallenlinsoftware.keepy_uppy.Background.Background;
 import matthewallenlinsoftware.keepy_uppy.Background.Beach;
@@ -19,7 +24,7 @@ import matthewallenlinsoftware.keepy_uppy.Ball.BeachBall;
 import matthewallenlinsoftware.keepy_uppy.Ball.BowlingBall;
 
 
-public class gameplay extends ActionBarActivity {
+public class gameplay extends LayoutGameActivity {
 
     String ballData, backgroundData;
     Ball ball;
@@ -138,5 +143,35 @@ public class gameplay extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected int getLayoutID() {
+        return 0;
+    }
+
+    @Override
+    protected int getRenderSurfaceViewID() {
+        return 0;
+    }
+
+    @Override
+    public EngineOptions onCreateEngineOptions() {
+        return null;
+    }
+
+    @Override
+    public void onCreateResources(OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
+
+    }
+
+    @Override
+    public void onCreateScene(OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
+
+    }
+
+    @Override
+    public void onPopulateScene(Scene pScene, OnPopulateSceneCallback pOnPopulateSceneCallback) throws IOException {
+
     }
 }
