@@ -165,7 +165,7 @@ public class gameplay extends LayoutGameActivity {
 
     @Override
     protected int getRenderSurfaceViewID() {
-        return R.id.backgroundImage;
+        return R.id.gameView;
     }
 
     @Override
@@ -174,7 +174,8 @@ public class gameplay extends LayoutGameActivity {
         EngineOptions engineOptions = new EngineOptions(true, ScreenOrientation.PORTRAIT_FIXED, new FillResolutionPolicy(), camera);
         engineOptions.getAudioOptions().setNeedsMusic(true).setNeedsSound(true);
         engineOptions.setWakeLockOptions(WakeLockOptions.SCREEN_ON);
-        return engineOptions;
+        return engineOptions;   //Code fucks up on the return. Error code below
+        //java.lang.RuntimeException: Unable to start activity ComponentInfo{matthewallenlinsoftware.keepy_uppy/matthewallenlinsoftware.keepy_uppy.gameplay}: java.lang.ClassCastException: android.widget.RelativeLayout cannot be cast to org.andengine.opengl.view.RenderSurfaceView
     }
 
     @Override
