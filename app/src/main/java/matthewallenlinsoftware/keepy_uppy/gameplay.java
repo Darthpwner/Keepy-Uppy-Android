@@ -186,8 +186,9 @@ public class gameplay extends LayoutGameActivity {
     @Override
     public void onCreateScene(OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
         mEngine.registerUpdateHandler(new FPSLogger());
+        //java.lang.NullPointerException: Attempt to read from field 'org.andengine.engine.Engine org.andengine.opengl.view.EngineRenderer.mEngine' on a null object reference
         currentScene = new Scene();
-        //currentScene.setBackground(new Background(0.09804f, 0.7274f, 0.8f));
+        currentScene.setBackground(new org.andengine.entity.scene.background.Background(0.09804f, 0.7274f, 0.8f));
     }
 
     @Override
