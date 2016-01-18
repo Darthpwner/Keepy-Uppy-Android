@@ -177,6 +177,18 @@ public class gameplay extends LayoutGameActivity {
 
     @Override
     public void onCreateResources(OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
+        setContentView(R.layout.activity_gameplay);
+
+        grabChooseBallAndChooseBackgroundData();
+
+        setBallProperties();
+
+        setBackgroundProperties();
+
+        setUpScoreZone();
+
+        setUpDangerZone();
+
         pOnCreateResourcesCallback.onCreateResourcesFinished();
     }
 
