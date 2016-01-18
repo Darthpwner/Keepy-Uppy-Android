@@ -1,7 +1,5 @@
 package matthewallenlinsoftware.keepy_uppy;
 
-import android.annotation.TargetApi;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -104,36 +102,36 @@ public class gameplay extends LayoutGameActivity {
 
     }
 
-    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gameplay);
-
-        grabChooseBallAndChooseBackgroundData();
-
-        setBallProperties();
-
-        setBackgroundProperties();
-
-        setUpScoreZone();
-
-        setUpDangerZone();
-
-        Log.i("STOP", "STOP");
-
-        //TODO: High score
-//        //MODE_PRIVATE allows only your app to access this data
-//        SharedPreferences sharedPreferences = this.getSharedPreferences("matthewallenlinsoftware.keepy_uppy", Context.MODE_PRIVATE);
+//    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_gameplay);
 //
-//        //Saves data
-//        sharedPreferences.edit().putInt("username", "rob").apply();
+//        grabChooseBallAndChooseBackgroundData();
 //
-//        //Get the data back
-//        String username = sharedPreferences.getString("username", "");
+//        setBallProperties();
 //
-//        Log.i("username", username);
-    }
+//        setBackgroundProperties();
+//
+//        setUpScoreZone();
+//
+//        setUpDangerZone();
+//
+//        Log.i("STOP", "STOP");
+//
+//        //TODO: High score
+////        //MODE_PRIVATE allows only your app to access this data
+////        SharedPreferences sharedPreferences = this.getSharedPreferences("matthewallenlinsoftware.keepy_uppy", Context.MODE_PRIVATE);
+////
+////        //Saves data
+////        sharedPreferences.edit().putInt("username", "rob").apply();
+////
+////        //Get the data back
+////        String username = sharedPreferences.getString("username", "");
+////
+////        Log.i("username", username);
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
